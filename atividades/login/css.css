@@ -1,0 +1,138 @@
+/*representa o conteúdo de um documento HTML*/
+body {
+
+    padding: 0;
+
+    margin: 0;
+
+    background-color: #454d6b;
+
+
+
+
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100vh;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.card {
+/*define a cor de fundo de um elemento*/
+    background-color: rgba(19, 19, 19, 0.3);
+/* define uma a distância entre o conteúdo de um elemento e suas bordas.*/
+    padding: 40px;
+/*A propriedade CSS3 border-radius destina-se a definir bordas arredondadas*/
+    border-radius: 2px;
+/*determina a largura da área de conteúdo de um elemento*/
+    width:280px;
+
+}
+
+.card-header {
+/*define as dimensões do espaçamento interno inferior (distância do elemento para sua própria borda), conforme a estrutura de box model que compõe cada elemento HTML na tela do navegador.*/
+    padding-bottom: 50px;
+/*especifica a transparência de um elemento, isto é, o grau no qual o background atrás do elemento é sobreposto.*/
+    opacity: 0.8;
+/*Escolher cor*/
+    color: #fff;
+
+}
+
+.card-header::after {
+/*determina a largura da área de conteúdo de um elemento*/
+    width: 70px;
+/*define o tamanho vertical ocupado por uma tag na tela do navegador*/
+    height: 1px;
+/*define a cor de fundo de um elemento*/
+    background-color: #fff;
+/*é uma propriedade utilizada para organizar os elementos na página HTML*/
+    display: block;
+/* define as dimensões da margem superior (distância do elemento para o elemento conseguinte), conforme a estrutura de box model que compõe cada elemento HTML na tela do navegador*/
+    margin-top: -17px;
+/*define as dimensões da margem esquerda (distância do elemento para o elemento conseguinte)*/
+    margin-left: -5px;
+
+}
+
+.card-content label {
+/*Escolher cor*/
+    color: #fff;
+/*Através do font-size você pode regular o tamanho da fonte*/
+    font-size: 12px;
+/*especifica a transparência de um elemento, isto é, o grau no qual o background atrás do elemento é sobreposto*/
+    opacity: 0.8;
+
+}
+
+.card-content-area {
+/*é uma propriedade utilizada para organizar os elementos na página HTML*/
+    display: flex;
+/*permite alterar a direção na qual os elementos flex serão exibidos ao longo do eixo principal*/
+    flex-direction: column;
+/*define uma a distância entre o conteúdo de um elemento e suas bordas*/
+    padding:10px 0;
+
+}
+
+.card-content-area input {
+/*define as dimensões da margem superior (distância do elemento para o elemento conseguinte), conforme a estrutura de box model que compõe cada elemento HTML na tela do navegador.*/
+    margin-top: 10px;
+/*define uma a distância entre o conteúdo de um elemento e suas bordas*/
+    padding:0 5px;
+/*define a cor de fundo de um elemento*/
+    background-color: transparent;
+/*é uma propriedade que adiciona um contorno em volta de um elemento HTML*/
+    border:none;
+/* é um shortcut para definir diversas propriedades da borda de baixo (bottom) ao mesmo tempo*/
+    border-bottom: 1px solid #e1e1e1;
+/* é a estrutura do documento que é gerada pelos títulos, títulos de formulários, títulos das tabelas e qualquer outro elemento que marque alguma seção de conteúdo no documento*/
+    outline: none;
+/*Escolher cor*/
+    color: #fff;
+
+}
+
+.card-footer {
+/*é uma propriedade utilizada para organizar os elementos na página HTML*/
+    display: flex;
+/*permite alterar a direção na qual os elementos flex serão exibidos ao longo do eixo principal.*/
+    flex-direction: column;
+
+}
+
+.card-footer .submit{
+/*determina a largura da área de conteúdo de um elemento*/
+    width: 100%;
+/*define o tamanho vertical ocupado por uma tag na tela do navegador*/
+    height: 40px;
+/*define a cor de fundo de um elemento*/
+    background-color: #a13854;
+/*borda*/
+    border:none;
+/*Escolher cor*/
+    color:#e1e1e1;
+/* abreviação que define todas as margens individuais de uma só vez*/
+    margin: 10px 0;
+
+}
+
+.card-footer a {
+/*Esta propriedade destina-se a definir o alinhamento horizontal do texto.*/
+    text-align: center;
+/*Através do font-size você pode regular o tamanho da fonte.*/
+    font-size: 12px;
+/*especifica a transparência de um elemento, isto é, o grau no qual o background atrás do elemento é sobreposto.*/
+    opacity: 0.8;
+/*Escolher cor*/
+    color: #fff;
+/*permite alterar a direção na qual os elementos flex serão exibidos ao longo do eixo principal*/
+    text-decoration: none;
+
+}
